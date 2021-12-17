@@ -1,0 +1,50 @@
+
+body {
+    background-color: var(--highlight);
+}
+
+.grid-container {
+    opacity: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 4%;
+    grid-column-gap: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    animation: fade-in 2s 1;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.grid-item {
+    transition: all .2s ease-in-out;
+    background-color: var(--logo_brown);
+    color: whitesmoke;
+    border: 2px solid var(--logo_brown);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    background-color: var(--hover_brown);
+}
+
+.grid-item img {
+    border: 2px solid var(--logo_brown);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    max-width: 85%;
+}
+
+.grid-item a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+

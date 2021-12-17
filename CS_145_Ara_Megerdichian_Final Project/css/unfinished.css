@@ -1,0 +1,19 @@
+/*For unfinished pages*/
+
+.unfinished {
+    opacity: 0;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 600px;
+    color: var(--dark_color);
+    font-size: 125%;
+    font-variant: small-caps;
+    animation: fade-in 1s 1;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.unfinished h3 {
+    font-style: italic;
+}
